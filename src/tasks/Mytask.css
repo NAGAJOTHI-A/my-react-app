@@ -1,0 +1,51 @@
+.maincont{
+    height: 600px;
+    width: 800px;
+    border:  1px solid black ;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cont1{
+    border:  1px solid black ;
+    height: 120px;
+    width: 215px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 60%;
+    top: 20%;
+}
+.cont2{
+    border:  1px solid black ;
+    height: 120px;
+    width: 215px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 60%;
+    top: 40%;
+}
+
+.arr{
+   height: 0px;
+   width: 0px;
+   border-left: 10px solid black;
+   
+   border-top: 10px solid transparent;
+   border-bottom: 10px solid transparent;
+   cursor: pointer;
+   position: relative;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}

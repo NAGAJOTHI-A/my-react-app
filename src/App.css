@@ -1,0 +1,46 @@
+.maincont{
+    height: 600px;
+    width: 920px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.cont1{
+    height: 200px;
+    width: 220px;
+    border: 1px solid black;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.cont2{
+    height: 200px;
+    width: 220px;
+    border: 1px solid black;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.arr{
+    height: 0px;
+    width: 0px;
+    border-left: 20px solid black;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    position: relative;
+    top: 27%;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 20%;
+    
+}
