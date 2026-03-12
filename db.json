@@ -1,0 +1,72 @@
+{
+  "data": [
+    {
+      "id": "f920",
+      "user": "viswa",
+      "password": "viswa123",
+      "email": "viswa123@gmail.com"
+    },
+    {
+      "id": "332b",
+      "user": "karthick",
+      "password": "karthick",
+      "email": "karthick123@gmail.com"
+    },
+    {
+      "id": "0c05",
+      "user": "kaviya",
+      "password": "kaviya123",
+      "email": "kaviya@gmail.com"
+    }
+  ],
+  "cart": [
+    {
+      "id": "0ba8",
+      "userEmail": "viswa123@gmail.com",
+      "productId": 44,
+      "title": "Family Tree Photo Frame",
+      "price": 29.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp"
+    },
+    {
+      "id": "c480",
+      "userEmail": "viswa123@gmail.com",
+      "productId": 79,
+      "title": "Asus Zenbook Pro Dual Screen Laptop",
+      "price": 1799.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp"
+    },
+    {
+      "id": "2408",
+      "userEmail": "viswa123@gmail.com",
+      "productId": 84,
+      "title": "Gigabyte Aorus Men Tshirt",
+      "price": 24.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
+    },
+    {
+      "id": "b30d",
+      "userEmail": "karthick123@gmail.com",
+      "productId": 17,
+      "title": "Beef Steak",
+      "price": 12.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp"
+    },
+    {
+      "id": "0ca3",
+      "userEmail": "kaviya@gmail.com",
+      "productId": 105,
+      "title": "Apple MagSafe Battery Pack",
+      "price": 99.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/thumbnail.webp"
+    },
+    {
+      "id": "7749",
+      "userEmail": "kaviya@gmail.com",
+      "productId": 111,
+      "title": "Selfie Stick Monopod",
+      "price": 12.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-stick-monopod/thumbnail.webp"
+    }
+  ]
+}
