@@ -32,7 +32,7 @@ const HomePage = () => {
         {img:"/cerave.webp",price:"Start Rs.1499"},
         {img:"/dotkey.jpg",price:"Start Rs.399"}
       ]
-    },,{
+    },{
       title: "Top T-Shirt Brands",
       brands:[
         {img:"/adidas.webp",price:"Start Rs.1499"},
