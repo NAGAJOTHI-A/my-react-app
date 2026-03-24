@@ -27,7 +27,7 @@ const ImageSlider = () => {
         {
           images.map((img,index)=>(
             <div key={index} className='slidecontainer'>
-              <img src={import.meta.env.BASE_URL +img} alt="" />
+              <img src={img} alt="" />
             </div>
           ))
         }

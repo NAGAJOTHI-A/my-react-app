@@ -11,7 +11,7 @@ const Cart = () => {
    
     let fetchCart=async ()=>{
         try {
-          let res=await axios.get(`https://my-react-app-pojg.onrender.com/cart?userEmail=${user.email}`)
+          let res=await axios.get(`https://69c29cd47518bf8facbef36f.mockapi.io/cart?userEmail=${user.email}`)
           setCart(res.data)
 
         } catch (error) {
@@ -28,7 +28,7 @@ const Cart = () => {
     console.log(cart);
 
     let handleRemove=async (id)=>{
-       await axios.delete(`https://my-react-app-pojg.onrender.com/cart/${id}`)
+       await axios.delete(`https://69c29cd47518bf8facbef36f.mockapi.io/cart/${id}`)
        fetchCart()
     }
      let convertToINR=(usd)=>{
