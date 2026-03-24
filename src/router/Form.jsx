@@ -91,7 +91,7 @@ const Form = () => {
       
      let payload={user,password,email}
      try{
-      let res=await axios.get("https://my-react-app-pojg.onrender.com/data");
+      let res=await axios.get("https://69c29cd47518bf8facbef36f.mockapi.io/data");
       let users=res.data;
 
       let emailExists=users.find((u)=> u.email === email)
@@ -101,7 +101,7 @@ const Form = () => {
           return;
       }
 
-     await axios.post("https://my-react-app-pojg.onrender.com/data",payload)
+     await axios.post("https://69c29cd47518bf8facbef36f.mockapi.io/data",payload)
      alert("you signedup successfully")
      navigate("/login")
          setState({
