@@ -17,6 +17,7 @@ const Form = () => {
   let handleChange=(e)=>{
 
      let {name,value}=e.target
+     value = value.trim(); 
 
      setState({...state,[name]:value})
      let newErr={...error}
@@ -31,7 +32,7 @@ const Form = () => {
        else{
            delete newErr.user;
        }
-       setError(newErr);
+       
        console.log(error.name);
      }
      
@@ -45,7 +46,7 @@ const Form = () => {
          else{
                delete newErr.password
          }
-         setError(newErr);
+         
          console.log(error.password);
      }
       
@@ -58,14 +59,10 @@ const Form = () => {
          } 
          else{
                delete newErr.email
-         }
-         
-         setError(newErr);
-         console.log(error.email);
-         
+         }    
      }
-      
-      
+          setError(newErr);
+         console.log(error);
   }
 
   let handleSubmit=async(e)=>{
@@ -86,6 +83,7 @@ const Form = () => {
      
      if (Object.keys(error).length>0) {
        alert("fix errors before Submitting")
+       console.log(error);
        return;
      }
       
@@ -93,8 +91,8 @@ const Form = () => {
      try{
       let res=await axios.get("https://69c29cd47518bf8facbef36f.mockapi.io/data");
       let users=res.data;
-
-      let emailExists=users.find((u)=> u.email === email)
+       let cleanEmail = email.trim();
+      let emailExists=users.find((u)=> u.email === cleanEmail)
 
       if(emailExists){
           setError({ ...error,email: "Email already exists, try different email"})
@@ -102,6 +100,9 @@ const Form = () => {
       }
 
      await axios.post("https://69c29cd47518bf8facbef36f.mockapi.io/data",payload)
+     console.log("Submitting...", payload);
+     console.log("Users:", users);
+
      alert("you signedup successfully")
      navigate("/login")
          setState({
