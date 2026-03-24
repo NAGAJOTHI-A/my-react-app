@@ -11,7 +11,7 @@ const Cart = () => {
    
     let fetchCart=async ()=>{
         try {
-          let res=await axios.get(`http://localhost:5000/cart?userEmail=${user.email}`)
+          let res=await axios.get(`http://localhost:10000/cart?userEmail=${user.email}`)
           setCart(res.data)
 
         } catch (error) {
@@ -28,7 +28,7 @@ const Cart = () => {
     console.log(cart);
 
     let handleRemove=async (id)=>{
-       await axios.delete(`http://localhost:5000/cart/${id}`)
+       await axios.delete(`http://localhost:10000/cart/${id}`)
        fetchCart()
     }
      let convertToINR=(usd)=>{

@@ -30,7 +30,7 @@ const Shoes = () => {
          try {
 
           let res=await axios.get(
-            `http://localhost:5000/cart?userEmail=${state.email}&productId=${shoe.id}`
+            `http://localhost:10000/cart?userEmail=${state.email}&productId=${shoe.id}`
           );
 
           if (res.data.length>0) {
@@ -38,7 +38,7 @@ const Shoes = () => {
             return
           }
 
-          await axios.post("http://localhost:5000/cart",{
+          await axios.post("http://localhost:10000/cart",{
             userEmail: state.email,
             productId: shoe.id,
             title: shoe.title,

@@ -29,6 +29,18 @@
       "user": "gayathri",
       "password": "gayathri@123",
       "email": "gayathri@gmail.com"
+    },
+    {
+      "user": "joe",
+      "password": "jothi1234",
+      "email": "joe123@gmail.com",
+      "id": "GSPZYOE2SJ8"
+    },
+    {
+      "user": "nidhi",
+      "password": "nidhi123",
+      "email": "nidhi123@gmail.com",
+      "id": "QnDtbUvK50U"
     }
   ],
   "cart": [
@@ -89,28 +101,37 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-ball/thumbnail.webp"
     },
     {
-      "id": "3245",
       "userEmail": "gayathri@gmail.com",
-      "productId": 49,
-      "title": "Black Aluminium Cup",
-      "price": 5.99,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/thumbnail.webp"
+      "productId": 79,
+      "title": "Asus Zenbook Pro Dual Screen Laptop",
+      "price": 1799.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp",
+      "id": "VJ7bI0OnSo0"
     },
     {
-      "id": "f3d0",
-      "userEmail": "gayathri@gmail.com",
-      "productId": 51,
-      "title": "Boxed Blender",
-      "price": 39.99,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp"
+      "userEmail": "joe123@gmail.com",
+      "productId": 16,
+      "title": "Apple",
+      "price": 1.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
+      "id": "Mi6O0J9raVE"
     },
     {
-      "id": "c570",
-      "userEmail": "gayathri@gmail.com",
-      "productId": 85,
-      "title": "Man Plaid Shirt",
-      "price": 34.99,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/thumbnail.webp"
+      "userEmail": "joe123@gmail.com",
+      "productId": 25,
+      "title": "Green Bell Pepper",
+      "price": 1.29,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+      "id": "dLaRz3NXa7c"
+    },
+    {
+      "userEmail": "nidhi123@gmail.com",
+      "productId": 44,
+      "title": "Family Tree Photo Frame",
+      "price": 29.99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+      "id": "5XuOi5ShZ94"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
