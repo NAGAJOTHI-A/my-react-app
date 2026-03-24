@@ -74,7 +74,7 @@ const Login = () => {
      }
      
      try {
-      let res=await axios.get("http://localhost:10000/data")
+      let res=await axios.get("https://my-react-app-pojg.onrender.com/data")
 
       let users=res.data
 

@@ -30,7 +30,7 @@ const Shoes = () => {
          try {
 
           let res=await axios.get(
-            `http://localhost:10000/cart?userEmail=${state.email}&productId=${shoe.id}`
+            `https://my-react-app-pojg.onrender.com/cart?userEmail=${state.email}&productId=${shoe.id}`
           );
 
           if (res.data.length>0) {
@@ -38,7 +38,7 @@ const Shoes = () => {
             return
           }
 
-          await axios.post("http://localhost:10000/cart",{
+          await axios.post("https://my-react-app-pojg.onrender.com/cart",{
             userEmail: state.email,
             productId: shoe.id,
             title: shoe.title,

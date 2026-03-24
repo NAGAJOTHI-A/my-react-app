@@ -91,7 +91,7 @@ const Form = () => {
       
      let payload={user,password,email}
      try{
-      let res=await axios.get("http://localhost:10000/data");
+      let res=await axios.get("https://my-react-app-pojg.onrender.com/data");
       let users=res.data;
 
       let emailExists=users.find((u)=> u.email === email)
@@ -101,7 +101,7 @@ const Form = () => {
           return;
       }
 
-     await axios.post("http://localhost:10000/data",payload)
+     await axios.post("https://my-react-app-pojg.onrender.com/data",payload)
      alert("you signedup successfully")
      navigate("/login")
          setState({
