@@ -15,7 +15,11 @@ const Cart = () => {
           setCart(res.data)
 
         } catch (error) {
-          console.log(error);
+          if (error.response && error.response.status === 404) {
+                setCart([]);
+            } else {
+            console.log(error);
+          }
           
         }
     }

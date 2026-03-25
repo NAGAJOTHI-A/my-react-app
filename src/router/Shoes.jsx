@@ -27,14 +27,23 @@ const Shoes = () => {
           navigate("/login")
           return
          }
-
+        try{
+          let res;
          try {
           console.log(
   `URL: https://69c29cd47518bf8facbef36f.mockapi.io/cart?userEmail=${state.email}`);
 
-          let res=await axios.get(
+          res=await axios.get(
             `https://69c29cd47518bf8facbef36f.mockapi.io/cart?userEmail=${state.email}`
           );
+        }catch (err) {
+      
+      if (err.response && err.response.status === 404) {
+        res = { data: [] }; 
+      } else {
+        throw err;
+      }
+       }
           let exists = res.data.some(item => item.productId == shoe.id);
           if (exists) {
             alert("Product Already in Cart")
