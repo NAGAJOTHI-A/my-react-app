@@ -21,26 +21,29 @@ const Shoes = () => {
 
 
     let handleClick=async (shoe)=>{
-        console.log(shoe);
+          console.log("User state:", state);
+          console.log("Product:", shoe);
          if(!state){
           navigate("/login")
           return
          }
 
          try {
+          console.log(
+  `URL: https://69c29cd47518bf8facbef36f.mockapi.io/cart?userEmail=${state.email}`);
 
           let res=await axios.get(
-            `https://69c29cd47518bf8facbef36f.mockapi.io/cart?userEmail=${state.email}&productId=${shoe.id}`
+            `https://69c29cd47518bf8facbef36f.mockapi.io/cart?userEmail=${state.email}`
           );
-
-          if (res.data.length>0) {
+          let exists = res.data.some(item => item.productId == shoe.id);
+          if (exists) {
             alert("Product Already in Cart")
             return
           }
 
           await axios.post("https://69c29cd47518bf8facbef36f.mockapi.io/cart",{
             userEmail: state.email,
-            productId: shoe.id,
+            productId: String(shoe.id),
             title: shoe.title,
             price: shoe.price,
             thumbnail: shoe.thumbnail
